@@ -15,14 +15,11 @@
 
       <div id="contentToTest" class="content-letter colour-distinction taller-lines">
 
-        <div class="govuk-!-margin-top-4">
 
-          {{ dwpLogo() }}
-
-        </div>
 
         <div class="address-row">
           <div class="address-row-item">
+<br><br><br>
             <p>
               {{ appName }} <br><br>
               68  Front Street <br>
@@ -30,7 +27,9 @@
               YO7 3FS
             </p>
           </div>
-          <div class="address-row-item">
+          <div class="address-row-item" >
+
+                      {{ dwpLogo() }}
             <p>
               Access to work<br>
               Operational Support Unit<br>
@@ -40,7 +39,7 @@
               WV98 1JE<br>
 
             </p>
-            
+
             <p><strong>www.gov.uk</strong></p>
             <p>
               Telephone: 0800 121 7479<br>
@@ -49,21 +48,22 @@
 
             </p>
 
-            <p>Your reference:</p>
+            <p>Your reference: 100XXXXXX</p>
 
           </div>
         </div>
 
-        <p>
-          {{ data.now | friendlyDate }}
-        </p>
+
+        <div class="govuk-grid-row">
+             <div class="govuk-grid-column-two-thirds">
 
         <h2 class="govuk-heading-l govuk-!-margin-top-5 govuk-!-margin-bottom-0">Your application for an Access to Work grant</h2>
 
-        <h3 class="govuk-heading-m govuk-!-margin-top-0 govuk-!-margin-bottom-0">We have received a claim for Carer’s Allowance which may affect other benefits</h3>
+        <h3 class="govuk-heading-m govuk-!-margin-top-0 govuk-!-margin-bottom-0">Your grant has been approved</h3>
 
-        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-9">
-
+        <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-1">
+      </div>
+      </div>
         <div class="letter-content-row">
 
           <div class="letter-content-primary">
@@ -78,10 +78,10 @@
 
             <p>
              We made our decision using the information you gave us.<br>
-             You told us that you work as<mark> [?]</mark> and that you work for <mark>[?]</mark>.
+             You told us that you work as <mark>[Redacted]</mark>  and that you work for <mark>[Redacted]</mark>.
             </p>
 
-            <p><mark>Free text [Explanation of decision e.g. who is funding each part of award, example employer/self employed under reasonable adjustment.]</mark>
+            <p>You also told us that <mark>[Redacted]</mark>  is the person at your workplace that can be contacted about your application.
 
             <h4 class="govuk-heading-s">What you will get</h4>
 
@@ -94,24 +94,25 @@
             </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__cell"><mark>[]</mark></th>
-              <td class="govuk-table__cell"><mark>[]</mark></td>
+
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__cell"><mark>[]</mark></th>
-              <td class="govuk-table__cell"><mark>[]</mark></td>
+              <th scope="row" class="govuk-table__cell">Travel to Work support for taxis to & from work for 10 journeys per week </th>
+              <td class="govuk-table__cell">£45.00 per journey witha customer contribution of £7.50 per journey based on 30 miles x 25p = £7.50</td>
             </tr>
           </tbody>
         </table>
 
             <p>
-            The total cost of this support is <mark>£[]</mark>. Access to Work will contribute a maximum of <mark>£[]</mark>.
+            The total cost of this support is 11635.71. Access to Work will contribute a maximum of £9,696.43.
             </p>
-
+<p>Support will start from 08/02/2021 until 07/08/2021 as long as your needsdo not change.</p>
           </div>
 
           <div class="letter-content-secondary">
-
+            <p>
+            13 July 2021
+            </p>
             <div class="alt-format-text">
 
               <h4 class="govuk-heading-s">
@@ -140,7 +141,7 @@
         <div id="contentToTest" class="content-letter colour-distinction taller-lines govuk-!-margin-top-9">
 
             <p class="govuk-!-margin-top-9">
-             <mark>[]</mark>
+
             </p>
 
             <p>
@@ -165,8 +166,29 @@
             You should make a claim for reimbursement as soon as possible. Access to Work may not accept claim for payments you made, if they are more than nine months after the date of payment.
           </p>
 
-          
+          <h4 class="govuk-!-margin-top-9 govuk-heading-s">
+            Important Information
+          </h4>
 
+        <p>
+          By claiming against this award you are accepting the terms and conditions below:
+        </p>
+
+        <ul class="govuk-list govuk-list--bullet">
+            <li>you can only use your Access to Work award for the support we tell you about in this letter	</li>
+            <li>you may only claim for the level of support that<br>
+              o	you have actually received and<br>
+              o	has been agreed in your award
+            </li>
+            <li>if you spend your award on items not agreed by Access to Work, we will not reimburse the money spent </li>
+            <li>you must tell Access to Work about any changes to your circumstances as they happen. This includes changes to your personal details, disability or health condition and employment</li>
+            <li>you understand that DWP will carry out reviews of your funding. If your needs change between reviews, please contact Access to Work</li>
+            <li>you must complete the claim form in full and sign the declaration before returning it. DWP will return any incorrect or incomplete forms</li>
+            <li>it may affect your Access to Work support if you: <br>
+              o	do not report any changes to your circumstances as they happen or <br>
+              o	you give wrong or incomplete information
+            </li>
+            </ul>
           <div class="app-page-number-row">
                 <p>
                     Page 2 of 4
@@ -177,35 +199,15 @@
 
         <div id="contentToTest" class="content-letter colour-distinction taller-lines govuk-!-margin-top-9">
 
-            <h4 class="govuk-!-margin-top-9 govuk-heading-s">
-              Important Information
-            </h4>
 
-          <p>
-            By claiming against this award you are accepting the terms and conditions below:
-          </p>
-
-          <ul class="govuk-list govuk-list--bullet">
-              <li>you can only use your Access to Work award for the support we tell you about in this letter	</li>
-              <li>you may only claim for the level of support that<br>
-                o	you have actually received and<br>
-                o	has been agreed in your award
-              </li>
-              <li>if you spend your award on items not agreed by Access to Work, we will not reimburse the money spent </li>
-              <li>you must tell Access to Work about any changes to your circumstances as they happen. This includes changes to your personal details, disability or health condition and employment</li>
-              <li>you understand that DWP will carry out reviews of your funding. If your needs change between reviews, please contact Access to Work</li>
-              <li>you must complete the claim form in full and sign the declaration before returning it. DWP will return any incorrect or incomplete forms</li>
-              <li>it may affect your Access to Work support if you: <br>
-                o	do not report any changes to your circumstances as they happen or <br>
-                o	you give wrong or incomplete information 
-              </li>
+<ul class="govuk-list govuk-list--bullet">
               <li>by making a claim, you are agreeing that DWP can recover any money which is wrongly paid where that overpayment resulted from: <br>
                 o	you not reporting any changes to your circumstances as they happen <br>
-                o	you giving wrong or incomplete information 
+                o	you giving wrong or incomplete information
               </li>
               <li>if DWP have evidence of fraud or misuse of Access to Work grants we may also take legal or other action. This could include stopping your support or recovering money paid</li>
-              <li>we check claim forms to confirm information with other sources. These may include employers, suppliers and providers</li>  
-
+              <li>we check claim forms to confirm information with other sources. These may include employers, suppliers and providers</li>
+</ul>
           <p>
           If you have any questions about this letter, a payment enquiry or if your needs change, please contact the Access to Work Team. Our address and phone number are at the top of this letter.
           </p>
@@ -220,7 +222,7 @@
 
           <p>Office manager</p>
 
-          
+
 
           <div class="app-page-number-row">
                 <p>
@@ -238,7 +240,7 @@
           <h4 class="govuk-heading-s">If you think our decision is wrong</h4>
 
           <p>
-            You can ask us to look at our decision again. 
+            You can ask us to look at our decision again.
           </p>
 
           <p>
@@ -247,7 +249,7 @@
 
           <p>
             Ask for the Access to Work Reconsideration Team.<br>
-            If you contact us after 4 weeks, we may not be able to help you.	
+            If you contact us after 4 weeks, we may not be able to help you.
           </p>
 
           <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4 govuk-!-margin-top-9">
@@ -267,15 +269,15 @@
           </p>
 
           <p>
-            <strong>Value for money</strong> – we provide support that meets your minimum needs in the most cost effective way for taxpayers.	
+            <strong>Value for money</strong> – we provide support that meets your minimum needs in the most cost effective way for taxpayers.
           </p>
-          
+
           <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4 govuk-!-margin-top-9">
 
           <h4 class="govuk-heading-s">Treating people fairly</h4>
 
           <p>
-            We are committed to the Equality Act 2010 and treating people fairly. To find out more about this law, search ‘Equality’ on www.gov.uk	
+            We are committed to the Equality Act 2010 and treating people fairly. To find out more about this law, search ‘Equality’ on www.gov.uk
           </p>
 
           <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4 govuk-!-margin-top-5">
@@ -283,7 +285,7 @@
           <h4 class="govuk-heading-s">Call charges</h4>
 
           <p>
-            Calls to 0800 numbers are free from personal mobiles and landlines.	
+            Calls to 0800 numbers are free from personal mobiles and landlines.
           </p>
 
           <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4 govuk-!-margin-top-5">
@@ -291,7 +293,7 @@
           <h4 class="govuk-heading-s">Why DWP needs personal information and how we treat it</h4>
 
           <p>
-            We treat personal information carefully. We may use it for any of our purposes. To learn more about information rights and how we use information, please see our DWP Personal Information Charter at <strong>www.gov.uk/dwp/personal-information-charter</strong>	
+            We treat personal information carefully. We may use it for any of our purposes. To learn more about information rights and how we use information, please see our DWP Personal Information Charter at <strong>www.gov.uk/dwp/personal-information-charter</strong>
           </p>
 
           <div class="govuk-!-margin-top-9 govuk-!-margin-bottom-9"><br></div>

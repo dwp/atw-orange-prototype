@@ -26,7 +26,7 @@
                 <p>
                     Copy the code below into an email and send it to the researcher.
                 </p>
-
+<button class="govuk-button" onclick="myFunction()">Copy text</button>
                 {{ govukTextarea ({
                     id: 'export-json',
                     name: 'export-json',
@@ -37,9 +37,10 @@
                 }) }}
 
                 <p>
-                    <a href="letter">
-                        Go back
-                    </a>
+                  {{ govukBackLink ({
+                      text: 'Go Back',
+                      href: 'javascript:history.back()'
+                  }) }}
                 </p>
 
             </form>
@@ -48,6 +49,20 @@
 
 </div>
 
+<script>
+  function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("export-json");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+
+} </script>
 {% endblock %}
 
 {% block pageScripts %}

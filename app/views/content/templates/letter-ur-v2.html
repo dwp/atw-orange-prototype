@@ -78,10 +78,10 @@
 
             <p>
              We made our decision using the information you gave us.<br>
-             You told us that you work as <mark>[Redacted]</mark>  and that you work for <mark>[Redacted]</mark>.
+             You told us that you work as [Job title] and that you work for [Employer name].
             </p>
 
-            <p>You also told us that <mark>[Redacted]</mark>  is the person at your workplace that can be contacted about your application.
+            <p>You also told us that [Contact name] is the person at your workplace that can be contacted about your application.
 
             <h4 class="govuk-heading-s">What you will get</h4>
 
@@ -322,14 +322,14 @@
 
                 <input id="export-field" type="hidden" name="export-json" value="{{ data['export-json'] }}">
 
-                  {{ govukButton({
+                  <!-- {{ govukButton({
                     text: 'Makes sense',
                     type: 'button',
                     classes: 'button--good',
                     attributes: {
                       'onclick': 'javascript:CFObject.voteUp();'
                     }
-                  }) }}
+                  }) }} -->
 
                   {{ govukButton({
                     text: 'Does not make sense',

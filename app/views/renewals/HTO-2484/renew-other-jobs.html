@@ -17,7 +17,12 @@ Using this service to renew your grant
   </p>
 </div>
 
-<a class="govuk-back-link" href="other-jobs">Back</a>
+{% if not hideback %}
+{{ govukBackLink({
+text: "Back",
+href: "javascript:history.go(-1)"
+}) }}
+{% endif %}
 
 {% endblock %}
 
@@ -34,15 +39,15 @@ Using this service to renew your grant
 
 
       <p>If your grant for your civil service employment ends on or after 1 April 2022, your employer will provide support instead of Access to Work. </p>
-      
+
       <p>You will not be able to renew your grant for this employment.</p>
       <div class="govuk-inset-text">
        You must contact your employer so they can assess and arrange the support you need.
       </div>
-        
-  
 
-     <!-- 
+
+
+     <!--
      <h3 class="govuk-heading-s">Self-employment or other employment</h2>
 
 
@@ -54,23 +59,23 @@ Using this service to renew your grant
 
       <h2 class="govuk-heading-m">Other employment or self-employment</h2>
 
-      <p>You can still use this service to renew your Access to Work grant for:</p> 
-       
+      <p>You can still use this service to renew your Access to Work grant for:</p>
+
         <ul class="govuk-list govuk-list--bullet">
          <li>self-employment</li>
          <li>non-civil service employment</li>
          <li>civil service employment, if your grant end date is before 1 April 2022</li>
        </ul>
-      
-      
-      
-    
-      
+
+
+
+
+
       <button  class="govuk-button" data-module="govuk-button">Renew your grant</button>
 
       </form>
 
-    </div>  
+    </div>
   </div>
 
 {% endblock %}

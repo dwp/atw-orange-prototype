@@ -17,7 +17,12 @@
   </p>
 </div>
 
-  <a class="govuk-back-link" href="clinically-extremely-vulnerable">Back</a>
+{% if not hideback %}
+{{ govukBackLink({
+text: "Back",
+href: "javascript:history.go(-1)"
+}) }}
+{% endif %}
 
 {% endblock %}
 

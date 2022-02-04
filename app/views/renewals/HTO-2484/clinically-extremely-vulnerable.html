@@ -18,19 +18,24 @@
   </p>
 </div>
 
-<a class="govuk-back-link" href="atw-cs">Back</a>
+{% if not hideback %}
+{{ govukBackLink({
+text: "Back",
+href: "javascript:history.go(-1)"
+}) }}
+{% endif %}
 
 {% endblock %}
 
 {% block content %}
 
-   
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
    <span class="govuk-caption-xl">Question 1 of 6</span>
-  
+
     <form class="form" action="personal-details-name" method="post">
-  
+
    <div class="govuk-form-group">
    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -71,5 +76,5 @@
   </div>
  </div>
 
-     
+
 {% endblock %}

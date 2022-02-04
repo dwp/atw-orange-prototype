@@ -17,12 +17,7 @@
   </p>
 </div>
 
-{% if not hideback %}
-{{ govukBackLink({
-text: "Back",
-href: "javascript:history.go(-1)"
-}) }}
-{% endif %}
+  <a class="govuk-back-link" href="contact-details">Back</a>
 
 {% endblock %}
 
@@ -84,7 +79,7 @@ href: "javascript:history.go(-1)"
               xxx<br>
               xxx<br>
               xxx xxx
-
+              
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -133,7 +128,7 @@ href: "javascript:history.go(-1)"
           </div>
         </dl>
 
-
+        
 
         <h2 class="govuk-heading-m">Declaration</h2>
 
@@ -150,7 +145,7 @@ href: "javascript:history.go(-1)"
        <strong class="govuk-warning-text__text">
        <span class="govuk-warning-text__assistive">Warning</span>
          It might be a criminal offence if you knowingly give false information or do not report anything that would affect your grant, for example if your condition improves or you change where you work.
-       </strong>
+       </strong> 
       </div>
 
         <button class="govuk-button" data-module="govuk-button">Accept and send application</button>

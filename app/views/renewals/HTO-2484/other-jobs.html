@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Are you renewing your grant for any other jobs?
+  Are you renewing your grant for any other jobs? 
 {% endblock %}
 
 {% block beforeContent %}
@@ -17,12 +17,7 @@
   </p>
 </div>
 
-{% if not hideback %}
-{{ govukBackLink({
-text: "Back",
-href: "javascript:history.go(-1)"
-}) }}
-{% endif %}
+<a class="govuk-back-link" href="renew-atw-cs">Back</a>
 
 {% endblock %}
 
@@ -39,7 +34,7 @@ href: "javascript:history.go(-1)"
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                 Are you renewing your grant for any other jobs?
+                 Are you renewing your grant for any other jobs? 
                 </h1>
               </legend>
 

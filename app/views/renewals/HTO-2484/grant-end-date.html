@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Are you renewing your grant for any other jobs? 
+   Does your grant end before 1 April 2022
 {% endblock %}
 
 {% block beforeContent %}
@@ -34,23 +34,23 @@
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                 Are you renewing your grant for any other jobs? 
+                 Does your grant end before <nobr>1 April 2022</nobr>
                 </h1>
               </legend>
 
               <div id="dob-hint" class="govuk-hint">
-               This means jobs that are not classed as civil service employment.
+               You can find your grant end date on your award letter or renewal reminder.
               </div>
 
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="are-you-a-civil-servant" name="are-you-a-civil-servant" type="radio" value="yes~renew-other-jobs.html">
+                  <input class="govuk-radios__input" id="are-you-a-civil-servant" name="are-you-a-civil-servant" type="radio" value="yes~grant-end-date-before-april.html">
                   <label class="govuk-label govuk-radios__label" for="are-you-a-civil-servant">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="are-you-a-civil-servant-2" name="are-you-a-civil-servant" type="radio" value="no~grant-end-date.html">
+                  <input class="govuk-radios__input" id="are-you-a-civil-servant-2" name="are-you-a-civil-servant" type="radio" value="no~civil-service-employment.html">
                   <label class="govuk-label govuk-radios__label" for="are-you-a-civil-servant-2">
                     No
                   </label>

@@ -19,7 +19,8 @@
 
           <div class="govuk-grid-column-two-thirds">
 
-            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Access to Work: renewals</h1>
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Access to Work</h1>
+            <h1 class="govuk-heading-l govuk-!-font-weight-regular  govuk-!-margin-bottom-2">Renewals prototype</h1>
 
           </div>
 
@@ -37,48 +38,58 @@
 
   {{ super() }}
   {{ govukBackLink({
-    text: 'Back to prototype home',
-    href: '/'
+    text: 'Back to renewals home',
+    href: '/renewals/'
   }) }}
 {% endblock %}
 
 {% block content %}
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    Navigation page for internal team use only. Not for development or usability sessions.
+  </strong>
+</div>
 
- <h2 class="govuk-heading-l">Renewals OGD prototypes for UR</h1>
+ <h2 class="govuk-heading-l">HTO-2902: Renewals OGD prototypes for UR</h1>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
 
 
-     <h2 class="govuk-heading-m">
-        <a href="/renewals/HTO-2902/email/index.html" class="govuk-link--no-visited-state">
-          HTO-2902: UR prototype for OGD changes added to live service on 21 February<br><strong class="govuk-tag govuk-tag--red">
-         Experimental
-        </strong>
-        </a>
-      </h2>
-      <p>UR version for civil service filtering question added. </p>
-      
-      
-      <p>Affecting grant end dates on or after 1 April 2022.</p> 
-   
-   
-   
-   
-    <h2 class="govuk-heading-m">
-        <a href="/renewals/HTO-2484/sms/index.html" class="govuk-link--no-visited-state">
-          HTO-2484: OGD change added <nobr>21 February</nobr> (dev ready prototype)<br><strong class="govuk-tag govuk-tag--green">
-        Live
-      </strong>
-        </a>
-      </h2>
 
-     <p>Civil service filtering question added. </p>
+      <h2 class="govuk-heading-m">Email</h2>
+     <p>
+        <a href="/renewals/HTO-2902/email/index.html" class="govuk-link--no-visited-state">
+       Email reminder scenario for UR
+     
+        </a>
+      <p>
+      <p>UR version with email, GOV.UK and service journeys.</p>
       
-      <p>Affecting grant end dates on or after 1 April 2022.</p>
+   
+   
+   <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">SMS</h2>
+
+     <p>
+        <a href="/renewals/HTO-2902/sms/index.html" class="govuk-link--no-visited-state">
+       SMS reminder scenario for UR
+     
+        </a>
+      <p>
+      <p>UR version with SMS, GOV.UK and service journeys.</p>
+      
       
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+
+
 
 
     </div>

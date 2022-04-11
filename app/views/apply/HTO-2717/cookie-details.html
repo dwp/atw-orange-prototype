@@ -81,52 +81,52 @@ Details about cookies on this service
         <li>how you got to the website</li>
       </ul>
       <table class="govuk-table">
-  
-  <caption class="govuk-table__caption">Google analytics cookies</caption> 
-    
+
+  <caption class="govuk-table__caption">Google analytics cookies</caption>
+
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
-    
+
       <th scope="col" class="govuk-table__header">Name</th>
-    
+
       <th scope="col" class="govuk-table__header">Purpose</th>
-    
+
       <th scope="col" class="govuk-table__header">Expires</th>
-    
+
     </tr>
   </thead>
-  
-  <tbody class="govuk-table__body">  
-        <tr class="govuk-table__row">  
+
+  <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
           <td class="govuk-table__cell">
           <mark>_ga</mark>
           </td>
-          
+
           <td class="govuk-table__cell">
           <mark>Counts how many people visit the website by tracking if they’ve visited before.</mark>
-          </td>      
-          
+          </td>
+
           <td class="govuk-table__cell">
           <mark>60 minutes or when you close your browser</mark>
-          </td>        
-        
+          </td>
+
         </tr>
-      
+
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
           <mark>_gat</mark>
-          </td>    
-          
+          </td>
+
           <td class="govuk-table__cell">
           <mark>Counts how many pages are viewed and how often.
           </td>
-         
+
           <td class="govuk-table__cell">
           <mark>10 minutes</mark>
           </td>
-             
-        </tr>  
-    
+
+        </tr>
+
   </tbody>
 </table>
 
@@ -137,21 +137,21 @@ Details about cookies on this service
         We use some cookies to help make sure this website works consistently for everyone.
       </p>
       <table class="govuk-table">
-  
+
   <caption class="govuk-table__caption">Amazon Web Services cookies</caption>
-  
-  
+
+
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th scope="col" class="govuk-table__header">Name</th>
       <th scope="col" class="govuk-table__header">Purpose</th>
       <th scope="col" class="govuk-table__header">Expires</th>
-    
+
     </tr>
   </thead>
-  
+
   <tbody class="govuk-table__body">
-      
+
         <tr class="govuk-table__row">
 
           <td class="govuk-table__cell">
@@ -161,13 +161,13 @@ Details about cookies on this service
           <td class="govuk-table__cell">
           <mark>Cookies help us to allocate server traffic to make the user experience as smooth as possible.</mark>
           </td>
-          
+
           <td class="govuk-table__cell">
           <mark>1 day</mark>
           </td>
 
         </tr>
-    
+
   </tbody>
 </table>
 
@@ -187,10 +187,10 @@ Details about cookies on this service
         <li>switch off your computer</li>
       </ul>
       <table class="govuk-table">
-  
+
   <caption class="govuk-table__caption">Security cookies</caption>
-  
-  
+
+
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th scope="col" class="govuk-table__header">Name</th>
@@ -198,10 +198,10 @@ Details about cookies on this service
       <th scope="col" class="govuk-table__header">Expires</th>
     </tr>
   </thead>
-  
-  <tbody class="govuk-table__body">      
+
+  <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-        
+
           <td class="govuk-table__cell">
           <mark>sessions_claim</mark>
           </td>
@@ -227,38 +227,38 @@ Details about cookies on this service
         You may see a banner when you visit this website inviting you to accept cookies or review your settings. We’ll set cookies so that your computer knows you’ve seen it and not to show it again, and also to store your settings.
       </p>
       <table class="govuk-table">
-  
+
   <caption class="govuk-table__caption">Service cookies</caption>
-  
-  
+
+
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
-    
+
       <th scope="col" class="govuk-table__header">Name</th>
-    
+
       <th scope="col" class="govuk-table__header">Purpose</th>
-    
+
       <th scope="col" class="govuk-table__header">Expires</th>
-    
+
     </tr>
   </thead>
-  
+
   <tbody class="govuk-table__body">
 
         <tr class="govuk-table__row">
-    
+
           <td class="govuk-table__cell">
           <mark>seen_cookie_message
           </td>
-          
+
           <td class="govuk-table__cell">
           <mark>Saves your cookie consent settings</mark>
           </td>
-          
+
           <td class="govuk-table__cell">
          <mark>1 year</mark>
          </td>
- 
+
         </tr>
 
   </tbody>
@@ -268,4 +268,31 @@ Details about cookies on this service
     </div>
      </div>
 
+{% endblock %}
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "https://www.get-disability-work-support.service.gov.uk/apply/accessibility-statement",
+          text: "Accessibility statement "
+        },
+        {
+          href: "cookie-policy",
+          text: "Cookies"
+        },
+        {
+          href: "https://www.gov.uk/government/organisations/department-for-work-pensions/about/personal-information-charter",
+          text: "Privacy Policy"
+        },
+
+        {
+          href: "https://www.get-disability-work-support.service.gov.uk/apply/accessibility-help",
+          text: "Accessibility Help"
+        }
+
+
+      ]
+    }
+  }) }}
 {% endblock %}

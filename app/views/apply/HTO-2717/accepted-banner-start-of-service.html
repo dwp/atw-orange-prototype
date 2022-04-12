@@ -79,3 +79,30 @@
       </div> </div>
 
 {% endblock %}
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "https://www.get-disability-work-support.service.gov.uk/apply/accessibility-statement",
+          text: "Accessibility statement "
+        },
+        {
+          href: "cookie-policy",
+          text: "Cookies"
+        },
+        {
+          href: "https://www.gov.uk/government/organisations/department-for-work-pensions/about/personal-information-charter",
+          text: "Privacy Policy"
+        },
+
+        {
+          href: "https://www.get-disability-work-support.service.gov.uk/apply/accessibility-help",
+          text: "Accessibility Help"
+        }
+
+
+      ]
+    }
+  }) }}
+{% endblock %}

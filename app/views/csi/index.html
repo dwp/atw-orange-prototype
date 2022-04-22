@@ -1,9 +1,8 @@
-{% set resetServiceName = true %}
 
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% set serviceName = "Apply for Access to Work" %}
 
 {% block pageTitle %}
-  Access to Work
+  Access to Work prototypes: renewals
 {% endblock %}
 
 {% block header %}
@@ -21,8 +20,7 @@
           <div class="govuk-grid-column-two-thirds">
 
             <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Access to Work</h1>
-
-            <h1 class="govuk-heading-l govuk-!-font-weight-regular  govuk-!-margin-bottom-2">Team Orange prototypes</h1>
+            <h1 class="govuk-heading-l govuk-!-font-weight-regular  govuk-!-margin-bottom-2">CSI prototypes</h1>
 
           </div>
 
@@ -36,6 +34,15 @@
 
 {% endblock %}
 
+{% block beforeContent %}
+
+  {{ super() }}
+  {{ govukBackLink({
+    text: 'Back to prototype home',
+    href: '/'
+  }) }}
+{% endblock %}
+
 {% block content %}
 <div class="govuk-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -47,24 +54,24 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
 
-      <h2 class="govuk-heading-m">
-        <a href="prototype-nav/award-letter.html" class="govuk-link--no-visited-state">
-          Award letter templates for UR
+ 
+ 
+ <h2 class="govuk-heading-m">
+        <a href="/csi/HTO-2718/index.html" class="govuk-link--no-visited-state">
+          HTO-2718: GA cookie consent design and content<br><strong class="govuk-tag govuk-tag--yellow">
+         Draft
+        </strong>
         </a>
-        <h2 class="govuk-heading-m">
-      <a href="renewals/index.html" class="govuk-link--no-visited-state">
-          Renewals service
-        </a>
+      </h2>
+      <p>Cookie consent for live CSI service. </p>
+  </h2>
+      
+      
 
-        <h2 class="govuk-heading-m">
-      <a href="apply/index.html" class="govuk-link--no-visited-state">
-         Apply service – live iterations
-        </a>
+   
 
-        <h2 class="govuk-heading-m">
-      <a href="csi/index.html" class="govuk-link--no-visited-state">
-         CSI service
-        </a>
+
+
 
 
     </div>

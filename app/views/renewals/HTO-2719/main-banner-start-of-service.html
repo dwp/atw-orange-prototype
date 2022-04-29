@@ -80,3 +80,23 @@ If you are not sure whether you are classed as a civil servant, your employer wi
       </div> </div>
 
 {% endblock %}
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "https://www.get-disability-work-support.service.gov.uk/apply/accessibility-statement",
+          text: "Accessibility statement "
+        },
+        {
+          href: "cookie-policy",
+          text: "Cookies"
+        },
+        {
+          href: "https://www.gov.uk/government/organisations/department-for-work-pensions/about/personal-information-charter",
+          text: "Privacy policy"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

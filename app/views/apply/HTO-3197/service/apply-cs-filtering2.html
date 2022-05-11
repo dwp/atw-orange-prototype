@@ -1,7 +1,7 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% set serviceName = "Apply for Access to Work" %}
 
 {% block pageTitle %}
-   Is your grant end date before 1 April 2022
+  Are you a civil servant?
 {% endblock %}
 
 {% block beforeContent %}
@@ -16,8 +16,6 @@
     </span>
   </p>
 </div>
-
-<a class="govuk-back-link" href="other-jobs">Back</a>
 
 {% endblock %}
 
@@ -34,25 +32,23 @@
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-
-                 Is your grant end date before <nobr>1 April 2022?</nobr>
-
+                  Are you a civil servant?
                 </h1>
               </legend>
 
               <div id="dob-hint" class="govuk-hint">
-               You can find your grant end date on your award letter or renewal reminder.
+               If you are not sure whether you are classed as a civil servant, your employer will be able to tell you.
               </div>
 
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="are-you-a-civil-servant" name="are-you-a-civil-servant" type="radio" value="yes~grant-end-date-before-april.html">
+                  <input class="govuk-radios__input" id="are-you-a-civil-servant" name="are-you-a-civil-servant" type="radio" value="yes~other-jobs.html">
                   <label class="govuk-label govuk-radios__label" for="are-you-a-civil-servant">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="are-you-a-civil-servant-2" name="are-you-a-civil-servant" type="radio" value="no~civil-service-employment.html">
+                  <input class="govuk-radios__input" id="are-you-a-civil-servant-2" name="are-you-a-civil-servant" type="radio" value="no~condition.html">
                   <label class="govuk-label govuk-radios__label" for="are-you-a-civil-servant-2">
                     No
                   </label>
@@ -69,14 +65,17 @@
     <div class="govuk-grid-column-one-third">
       <hr class="govuk-section-break govuk-section-break--visible">
         <aside id="journey-sidebar" role="region">
-        <h2 class="govuk-heading-m govuk-!-margin-top-4">Get help</h2>
-        <h3 class="govuk-heading-s">Telephone</h3>
-        <p class="govuk-body">0800 169 0154</p>
-        <p class="govuk-body">Monday to Friday, 8am to 6pm</p>
-        <p class="govuk-body">Closed public holidays</p>
-        <h3 class="govuk-heading-s">Email</h3>
-        <p class="govuk-body"><a rel="external" href="mailto:dwponline.helpdesk@dwp.gov.uk"> dwponline.helpdesk@dwp.gov.uk</a></p>
+        <h2 class="govuk-heading-m govuk-!-margin-top-4">You can get support by:</h2>
+        <ul class="govuk-list govuk-list--bullet">
+    <li>telephone: 0800 121 7479</li>
+    <li>textphone: 0800 121 7579</li>
+    <li><a href="https://www.relayuk.bt.com/">Relay UK</a>, if you cannot hear or speak on the phone: 18001 then 0800 121 7479</li>
+    <li><a href="https://portal.starleaf.com/webrtc?name=DWP&target=DWP@interpreterslive.call.sl">video relay service</a> for British Sign Language users (<a href="https://www.dalanguages.co.uk/dwp-bsl/">find out how to use the service</a>)</li>
+    </ul>
+
+        <p class="govuk-body">These free services are available Monday to Friday, 9am to 5pm.</p>
     </aside>
+
 
       </div> </div>
 

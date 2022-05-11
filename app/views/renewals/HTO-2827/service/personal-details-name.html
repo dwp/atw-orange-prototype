@@ -17,12 +17,14 @@
   </p>
 </div>
 
+
 {% if not hideback %}
 {{ govukBackLink({
 text: "Back",
 href: "javascript:history.go(-1)"
 }) }}
 {% endif %}
+
 
 {% endblock %}
 
@@ -31,7 +33,9 @@ href: "javascript:history.go(-1)"
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+
       <span class="govuk-caption-xl">Question 1 of 5</span>
+
 
       <form class="form" action="personal-details-dob" method="post">
 

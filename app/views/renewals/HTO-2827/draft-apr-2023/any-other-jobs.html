@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-   Is your grant end date before 1 April 2022
+  Are you renewing your grant for any other jobs?
 {% endblock %}
 
 {% block beforeContent %}
@@ -17,7 +17,7 @@
   </p>
 </div>
 
-<a class="govuk-back-link" href="other-jobs">Back</a>
+<a class="govuk-back-link" href="are-you-a-civil-servant">Back</a>
 
 {% endblock %}
 
@@ -34,25 +34,23 @@
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-
-                 Is your grant end date before <nobr>1 April 2022?</nobr>
-
+                 Are you renewing your grant for any other jobs?
                 </h1>
               </legend>
 
               <div id="dob-hint" class="govuk-hint">
-               You can find your grant end date on your award letter or renewal reminder.
+               This means jobs that are not classed as civil service employment.
               </div>
 
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="are-you-a-civil-servant" name="are-you-a-civil-servant" type="radio" value="yes~grant-end-date-before-april.html">
+                  <input class="govuk-radios__input" id="are-you-a-civil-servant" name="are-you-a-civil-servant" type="radio" value="yes~other-jobs.html">
                   <label class="govuk-label govuk-radios__label" for="are-you-a-civil-servant">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="are-you-a-civil-servant-2" name="are-you-a-civil-servant" type="radio" value="no~civil-service-employment.html">
+                  <input class="govuk-radios__input" id="are-you-a-civil-servant-2" name="are-you-a-civil-servant" type="radio" value="no~grant-end-date.html">
                   <label class="govuk-label govuk-radios__label" for="are-you-a-civil-servant-2">
                     No
                   </label>

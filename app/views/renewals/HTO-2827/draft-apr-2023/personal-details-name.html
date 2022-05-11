@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Civil service employment: grant end date on or after 1 April 2022
+   What is your name?
 {% endblock %}
 
 {% block beforeContent %}
@@ -17,35 +17,42 @@ Civil service employment: grant end date on or after 1 April 2022
   </p>
 </div>
 
-<a class="govuk-back-link" href="grant-end-date">Back</a>
+  <a class="govuk-back-link" href="clinically-extremely-vulnerable">Back</a>
 
 {% endblock %}
 
 {% block content %}
 
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl">Question 2 of 6</span>
 
+      <form class="form" action="personal-details-dob" method="post">
 
-      <h1 class="govuk-heading-xl">Civil service employment: grant end date on or after <nobr>1 April 2022</nobr></h1>
+      <h1 class="govuk-heading-xl">
+         What is your name?
+      </h1>
 
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-label--m" for="f-firstName">
+         First name
+        </label>
 
+        <input class="govuk-input govuk-!-width-one-half" id="f-firstName" name="firstName" type="text">
+     </div>
 
+    <div class="govuk-form-group">
+     <label class="govuk-label govuk-label--m" for="f-lastName">
+       Last name
+     </label>
 
-      <p>As your grant end date is on or after 1 April 2022, your employer will provide support instead of Access to Work.</p>
-      <p>You will not be able to renew your Access to Work grant.</p>
+     <input class="govuk-input govuk-!-width-one-half" id="f-lastName" name="lastName" type="text">
+    </div>
 
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
 
-      <div class="govuk-inset-text">
-        You will need to contact your employer so they can assess and arrange the support you need.
-      </div>
-
-
-
-
-
-      <p><a href="https://www.gov.uk/access-to-work/eligibility">Access to Work eligibility guidance on GOV.UK</a></p>
-
+      </form>
 
     </div>
     <div class="govuk-grid-column-one-third">
@@ -61,5 +68,4 @@ Civil service employment: grant end date on or after 1 April 2022
     </aside>
 
       </div> </div>
-
 {% endblock %}

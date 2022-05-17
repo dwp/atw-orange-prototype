@@ -1,7 +1,7 @@
 {% extends "layout.html" %} {% set serviceName = "Apply for Access to Work" %}
 
 {% block pageTitle %}
-Are you applying for Access to Work Plus?
+  Has your employer asked you to apply for Access to Work Plus?
 {% endblock %}
 
 
@@ -40,12 +40,16 @@ href: "javascript:history.go(-1)"
    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-  Are you applying for Access to Work Plus?
+        Are you applying for Access to Work Plus?
       </h1>
     </legend>
 
-    <div id="clinicallyExtremelyVulnerable-hint" class="govuk-hint">
-      Your employer or local council may have asked you to apply for this scheme. Your answer will not affect your eligibility for Access to Work support.
+    <div id="AccessToWorkPlus-hint" class="govuk-hint">
+    Only answer yes if your employer or local council has asked you to apply for the Access to Work Plus scheme.
+    </div>
+
+    <div id="AccessToWorkPlus-hint" class="govuk-hint">
+       Your answer will not affect your eligibility for Access to Work support.
     </div>
 
     <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">

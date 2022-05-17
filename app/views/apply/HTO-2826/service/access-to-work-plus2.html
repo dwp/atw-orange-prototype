@@ -1,7 +1,7 @@
 {% extends "layout.html" %} {% set serviceName = "Apply for Access to Work" %}
 
 {% block pageTitle %}
-  Has your employer asked you to apply for Access to Work Plus?
+What type Access to Work are you applying for?
 {% endblock %}
 
 
@@ -31,49 +31,54 @@ href: "javascript:history.go(-1)"
 
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-   
+      <div class="govuk-grid-column-two-thirds">
 
-    <form class="form" action="personal-details-name" method="post">
+        <h1 class="govuk-heading-l">
+          Application type
+        </h1>
 
-   <div class="govuk-form-group">
-   <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-      <h1 class="govuk-fieldset__heading">
-        Are you applying for Access to Work Plus?
-      </h1>
-    </legend>
+        <p class="govuk-body">
+          Access to Work Plus is a pilot scheme your employer or local council may have asked you to apply for.
+        </p>
 
-    <div id="clinicallyExtremelyVulnerable-hint" class="govuk-hint">
-       Only answer yes if your employer has asked you to apply for Access to Work Plus.
-    </div>
+        <p class="govuk-body">
+          Your answer will not affect your eligibility for Access to Work support.
+        </p>
 
-    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
 
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-        <label class="govuk-label govuk-radios__label" for="changed-name">
-          Yes
-        </label>
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                What type of Access to Work are you applying for?
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="interview-needs" name="interview-needs" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="interview-needs">
+                    Access to Work
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="interview-needs-2" name="interview-needs" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="interview-needs-2">
+                    Access to Work Plus
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+        
+
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
       </div>
-
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          No
-        </label>
-      </div>
-
-    </div>
-
-  </fieldset>
-</div>
-
-  <button class="govuk-button" data-module="govuk-button">
-     Continue
-   </button>
-   </form>
-  </div>
+    
+  
 
  <div class="govuk-grid-column-one-third">
    <hr class="govuk-section-break govuk-section-break--visible">
@@ -87,6 +92,8 @@ href: "javascript:history.go(-1)"
      <p class="govuk-body"><a rel="external" href="mailto:dwponline.helpdesk@dwp.gov.uk"> dwponline.helpdesk@dwp.gov.uk</a></p>
  </aside>
 
-   </div> </div>
+   </div> 
+   
+   </div>
 
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends "layout.html" %} {% set serviceName = "Apply for Access to Work" %}
 
 {% block pageTitle %}
-  Are you applying for Access to Work Plus?
+What type Access to Work are you applying for?
 {% endblock %}
 
 
@@ -40,27 +40,27 @@ href: "javascript:history.go(-1)"
    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-        Are you applying for Access to Work Plus?
+  What type Access to Work are you applying for?
       </h1>
     </legend>
 
-    <div id="AccessToWorkPlus-hint" class="govuk-hint">
-    Only answer yes if your employer or local council has asked you to apply for the Access to Work Plus scheme.
+    <div id="clinicallyExtremelyVulnerable-hint" class="govuk-hint">
+      Access to Work Plus is a pilot scheme your employer or local council may have asked you to apply for. Your answer will not affect your eligibility.
     </div>
 
-    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+    <div class="govuk-radios" data-module="govuk-radios">
 
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
         <label class="govuk-label govuk-radios__label" for="changed-name">
-          Yes
+          Access to Work
         </label>
       </div>
 
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
         <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          No
+          Access to Work Plus
         </label>
       </div>
 

@@ -1,7 +1,7 @@
 {% extends "layout.html" %} {% set serviceName = "Apply for Access to Work" %}
 
 {% block pageTitle %}
-Civil service employment: grant ending on or after 1 April 2022
+   What is your name?
 {% endblock %}
 
 {% block beforeContent %}
@@ -17,36 +17,40 @@ Civil service employment: grant ending on or after 1 April 2022
   </p>
 </div>
 
-<a class="govuk-back-link" href="other-jobs">Back</a>
+{% if not hideback %}
+{{ govukBackLink({
+text: "Back",
+href: "javascript:history.go(-1)"
+}) }}
+{% endif %}
 
 {% endblock %}
 
 {% block content %}
 
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-  
-      <h1 class="govuk-heading-xl">How to get support for your civil service employment</h1>
-
-
-
-      <p>As you are a civil servant, your employer will provide support instead of Access to Work.</p>
-       <div class="govuk-inset-text">
-      You will need to contact your employer so they can assess and arrange the support you need.
-      </div>
-
-
-<h2 class="govuk-heading-m">If you need mental health support</h2>
-   <p>You can still get Access to Work for mental health services if you are a civil servant. You can apply for support from either:</p>
-<ul class="govuk-list govuk-list--bullet"> 
-<li><a href="https://able-futures.co.uk/individuals">Able Futures</a></li>
-<li> <a href="https://www.remploy.co.uk/about-us/current-programmes/access-work-mental-health-support-service/">Remploy</a> </li>
-</ul>
-<p>These providers will contact Access to Work on your behalf. You will not need to tell your employer.</p>
-
-
-
     
+      <form class="form" action="personal-details-dob" method="post">
+
+  <div class="govuk-form-group">
+
+  <fieldset class="govuk-fieldset">
+  
+  
+  
+
+</fieldset>
+
+
+</div>
+
+<button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+      </form>
 
     </div>
     <div class="govuk-grid-column-one-third">
@@ -62,5 +66,4 @@ Civil service employment: grant ending on or after 1 April 2022
     </aside>
 
       </div> </div>
-
 {% endblock %}

@@ -18,12 +18,7 @@ Application type
   </p>
 </div>
 
-{% if not hideback %}
-{{ govukBackLink({
-text: "Back",
-href: "javascript:history.go(-1)"
-}) }}
-{% endif %}
+<a class="govuk-back-link" href="personal-details">Back</a>
 
 {% endblock %}
 
@@ -46,7 +41,7 @@ href: "javascript:history.go(-1)"
         </p>
 
 
-        <form action="/form-handler" method="post" novalidate>
+        <form class="form" action="contact" method="post">
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">

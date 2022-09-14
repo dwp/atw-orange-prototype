@@ -1,0 +1,121 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  HTO-4071 index
+{% endblock %}
+
+{% block header %}
+
+  <div class="prototype-remove-blue-border-from-header">
+
+    {{ super() }}
+
+    <div class="prototype-home-top">
+
+      <div class="govuk-width-container">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Access to Work</h1>
+            <h1 class="govuk-heading-l govuk-!-font-weight-regular  govuk-!-margin-bottom-2">Apply prototype</h1>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ super() }}
+  {{ govukBackLink({
+    text: 'Back to apply scenarios',
+    href: '/apply/index'
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+ <h2 class="govuk-heading-l">HTO-4071: Access to Work Plus 
+ <br>Priority case question iteration</h2>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+
+
+    <h3 class="govuk-heading-m">Updated question: eligibility checboxes</h3>
+
+
+    <p><a href="service-atw-plus-v2/application-type" class="govuk-link--no-visited-state">
+      Iterated Access to Work Plus eligibility question
+        </a>
+        <br><strong class="govuk-tag govuk-tag--green">
+         Replacement question 
+        </strong></p>
+       
+      
+      <p class="govuk-body">Summary of changes:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>radios replaced with eligibility criteria checkboxes</li>
+  <li>reference to AtW Plus removed</li>
+  <li>if any of the eligibility checboxes selected, the case will show up in ATWIS and an AtW Plus priority case</li>
+</ul>
+  
+  <p>
+        <a href="service-atw-plus-v2/review" class="govuk-link--no-visited-state">
+       Check your answers page update
+     
+        </a>
+      <br>xxxx</p>
+
+        <p>
+        <a href="service-atw-plus-v2/are-you-a-civil-servant" class="govuk-link--no-visited-state">
+       Full service journey: updated</a>
+       <p>  
+
+      
+
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h3 class="govuk-heading-m">Current: AtW Plus question</h3>
+
+        <p>
+        <a href="service-atw-plus-v1/application-type" class="govuk-link--no-visited-state">
+      Access to Work Plus question (application type)
+     
+        </a>
+      <br>Type of AtW listed in radio content.<br><strong class="govuk-tag govuk-tag--red">
+         To be replaced
+        </strong></p>
+
+      <p>
+        <a href="service-atw-plus-v1/review" class="govuk-link--no-visited-state">
+       Check your answers page – application type section
+        </a>
+        </p>
+
+        <p>
+        <a href="service-atw-plus-v1/are-you-a-civil-servant" class="govuk-link--no-visited-state">
+       Full service journey: current </a>
+      </p>
+
+  
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

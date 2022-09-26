@@ -30,45 +30,69 @@ href: "javascript:history.go(-1)"
 {% block content %}
 
 
+
+
 <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-      <form class="form" action="education-support" method="post">
+       <form class="form" action="education-support" method="post">
 
-        <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="support-type-hint">
+  <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#support-type">Select whether you get any of these types of support</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+     
+     <div class="govuk-form-group govuk-form-group--error">
+  <fieldset class="govuk-fieldset" aria-describedby="support-type-error">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-        Do you get any of these types of support?
+       Do you get any of these types of support?
       </h1>
     </legend>
+
     <div id="support-hint" class="govuk-hint">
       Select all types of support that apply.
     </div>
+
+    <p id="support-type-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Select whether you get any of these types of support
+    </p>
+
     <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="support-type" name="support-type" type="checkbox" value="adult-social-care">
         <label class="govuk-label govuk-checkboxes__label" for="support-type">
-         Adult Social Care advice or support from your local council
+          Adult Social Care advice or support from your local council
         </label>
       </div>
+
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="support-type-2" name="support-type" type="checkbox" value="esa-support-group">
         <label class="govuk-label govuk-checkboxes__label" for="support-type-2">
-        Employment and Support Allowance (ESA) support group 
+          Employment and Support Allowance (ESA) support group 
         </label>
       </div>
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="support-type-3" name="support-type" type="checkbox" value="uc-limited-capability-for-work">
         <label class="govuk-label govuk-checkboxes__label" for="support-type-3">
-         assessed as having ‘limited capability for work’ by Universal Credit
+          assessed as having ‘limited capability for work’ by Universal Credit
         </label>
       </div>
       <div class="govuk-checkboxes__divider">or</div>
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="support-type-5" name="support-type" type="checkbox" value="none" data-behaviour="exclusive">
         <label class="govuk-label govuk-checkboxes__label" for="support-type-5">
-          None of these types of support
+           None of these types of support
         </label>
       </div>
     </div>
